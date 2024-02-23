@@ -1,0 +1,28 @@
+Codes creating tables in database Oracle SQL
+============================================
+
+create user tameen IDENTIFIED BY tameen ;
+grant dba to tameen;
+
+
+
+create table users (
+u_id number(9) primary key,
+code varchar2 (30)not null,
+valu number (9)not null,
+dat date not null,
+tam_num number(9)not null,
+nam varchar2(30)not null,
+title varchar2(30)not null,
+ro_photo BLOB not null
+);
+
+
+create table admins (
+u_id number(5) PRIMARY KEY,
+user_name varchar2(30) not null,
+nam varchar2(30) not null,
+dat date not null,
+password varchar2(30) not null,
+rolle varchar2(30) not null
+);
